@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} style={{transform: `rotate(${counter * 40}deg)`}} className="App-logo"alt="logo" />
          <div style={{fontSize: "40px"}}>{counter}</div>
          <div>
             <button onClick={() => setCounter(counter-1)}>-</button>
